@@ -1,4 +1,4 @@
-//Creating 2D array
+//Creating 2D array 
 import java.util.*;
 public class create2D {
     public static void main(String[] args) {
