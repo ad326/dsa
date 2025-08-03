@@ -29,5 +29,6 @@ public class string {
         System.out.println(fullName);
         printLetter(fullName);
 
+        sc.close();
     }
 }
