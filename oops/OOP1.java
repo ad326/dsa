@@ -7,11 +7,26 @@ public class OOP1 {
 
         p1.setTip(5);
         System.out.println(p1.getTip());
+
+        Student s1 = new Student();
+        s1.name = "tony";
+        s1.roll = 6;
+        s1.password = "abcd";
+        s1.marks[0] = 100;
+        s1.marks[1] = 90;
+        s1.marks[2] = 80;
+
+        Student s2 = new Student(s1); //Shallow copy
+        s2.password = "xyz";
+        s1.marks[2] = 100;
+        for(int i = 0; i<3; i++) {
+            System.out.println(s2.marks[i]);
+        }
         
     }
 }
 
-//Create Pen class
+//Create Pen class (Example of Encapsulation)
 class Pen {                    
         private String color;
         private int tip;
@@ -33,4 +48,36 @@ class Pen {
         void setTip(int tip) {
             this.tip = tip;
         }
+}
+
+//Create Student class (Example of Constructor)
+class Student {
+    String name;
+    int roll;
+    String password;
+    int marks[];
+
+
+    //Copy constructor
+    Student (Student s1) {
+        marks = new int[3];
+        this.name = s1.name;
+        this.roll = s1.roll;
+        this.marks = s1.marks;
+    }
+
+    Student() {
+        marks = new int[3];
+        System.out.println("Constructor is called....");
+    }
+
+    Student(String name) {
+        marks = new int[3];
+        this.name = name;
+    }
+
+    Student(int roll) {
+        marks = new int[3];
+        this.roll = roll;
+    }
 }
