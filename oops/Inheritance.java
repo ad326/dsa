@@ -27,3 +27,10 @@ class Fish extends Animal {
         System.out.println("Swims in water");
     }
 }
+
+// Types of Inheritence:
+// 1. Single level Inheritence
+// 2. Multi level Inheritence
+// 3. Hierarchial Inheritence
+// 4. Hybrid Inheritence
+// 5. Multiple Inheritence (Java doesn't support it)
