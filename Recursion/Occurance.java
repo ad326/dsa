@@ -22,6 +22,10 @@ public class Occurance {
         }
         return isFound;
     }
+
+    public static void firstLastOccurance(int first, int last, String str, int id) {
+        
+    }
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6,7,9,5,10};
         System.out.println("First Occurance is: "+firstOccurance(arr, 5, 0));
