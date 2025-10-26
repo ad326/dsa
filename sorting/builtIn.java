@@ -1,6 +1,6 @@
 //Built in sorting (n log n)
 import java.util.*;
-public class builtIn {
+public class BuiltIn {
     public static void main(String[] args) {
         Integer arr[]= {5,6,3,2,9,10};
         //sort from index 0 to 2

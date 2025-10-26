@@ -1,6 +1,6 @@
 // Selection Sort
 import java.util.*;
-public class selectionSort {
+public class SelectionSort {
     public static void Selection(int arr[]){
         int i,j,temp,min;
 

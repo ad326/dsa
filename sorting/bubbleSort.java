@@ -1,6 +1,6 @@
 //Bubble Sort
 import java.util.*;
-public class bubbleSort {
+public class BubbleSort {
     public static void sorting(int arr[]){
         int i,j,temp,swap=0;
         
