@@ -2,22 +2,23 @@
 import java.util.*;
 public class BubbleSort {
     public static void sorting(int arr[]){
-        int i,j,temp,swap=0;
+        int i,j,temp;
+        boolean swap = false;
         
         for(i=0;i<arr.length-1;i++){
             for(j=0;j<arr.length-i-1;j++){
                 if(arr[j]>arr[j+1]){
-                    swap++;
+                    swap=true;
                     temp= arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
                 }
             }
-            if(swap==0){
+            if(swap==false){
                 break;
             }
         }
-        if(swap==0){
+        if(swap==false){
             System.out.println("The array is already sorted!!!");
         }else{
             System.out.println("After sorting array is: "+Arrays.toString(arr));
