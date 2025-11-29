@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class IntroArraylist {
     public static void main(String[] args) {
@@ -32,6 +32,14 @@ public class IntroArraylist {
 
         //Size of arraylist
         System.out.println("The size of this arrayList is: "+list.size());
+
+        //Sorting arrayList
+        Collections.sort(list);
+        System.out.println("After sorting arraylist is: "+list);
+
+        //Sorting is descending order
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println("After sorting in descending order: "+list);
 
     }
 }
