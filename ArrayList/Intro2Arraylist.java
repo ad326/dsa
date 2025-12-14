@@ -10,16 +10,19 @@ public class Intro2Arraylist {
         for(int i=1; i<6; i++) {
             list1.add(i);
         }
-        System.out.println(list1);
 
         for(int i = 2; i<11; i+=2) {
             list2.add(i);
         }
-        System.out.println(list2);
 
         for(int i = 1; i<10; i+=2) {
             list3.add(i);
         }
-        System.out.println(list3);
+
+        mainList.add(list1);
+        mainList.add(list2);
+        mainList.add(list3);
+
+        System.out.println(mainList);
     }
 }
